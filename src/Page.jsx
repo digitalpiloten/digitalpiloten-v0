@@ -33,7 +33,7 @@ const Page = (props) => (
       }
  
       // See the Contentful query response
-      console.debug(data);
+      //console.debug(data);
  
       // Process and pass in the loaded `data` necessary for your page or child components
       return (
