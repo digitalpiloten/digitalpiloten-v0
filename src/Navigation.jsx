@@ -8,7 +8,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 class Navigation extends React.Component {
     render() {
         return (
-            <Navbar>
+            <Navbar bg="light" expand="lg">
                 <LinkContainer to="/">
                     <Navbar.Brand>DigitalPiloten e. V.</Navbar.Brand>
                 </LinkContainer>
