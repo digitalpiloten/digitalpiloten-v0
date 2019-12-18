@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ContentfulClient, ContentfulProvider } from 'react-contentful';
+import Page from './Page';  // @see Page component defined in `Query` example below
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+ 
+const contentfulClient = new ContentfulClient({
+  accessToken: '3TqE5jgY94Y_4_K8301MWV_DsBJaeTG9utoRXElatOQ',
+  space: 'o36zpu2jig04',
+});
+ 
+const App = () => (
+  <ContentfulProvider client={contentfulClient}>
+    <Router>
+      <Switch>
+        <Route path="/:slug*" component={Page} />
+      </Switch>
+    </Router>
+  </ContentfulProvider>
+);
+ 
 export default App;
