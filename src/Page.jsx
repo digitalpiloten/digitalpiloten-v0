@@ -2,6 +2,10 @@ import React from 'react';
 import { Query } from 'react-contentful';
 
 import ReactMarkdown from 'react-markdown';
+
+import {
+  Redirect
+}  from "react-router-dom"
  
 class Page extends React.Component {
 
@@ -24,15 +28,15 @@ class Page extends React.Component {
           }
     
           if (!data) {
-            return <p>404 - Page does not exist.</p>;
+            return <Redirect to="/404" />;
           }
 
           if(!data.items) {
-            return <p>404 - Page does not exist.</p>;
+            return <Redirect to="/404" />;
           }
 
           if(data.items.length < 1) {
-            return <p>404 - Page does not exist.</p>;
+            return <Redirect to="/404" />;
           }
     
           // See the Contentful query response
