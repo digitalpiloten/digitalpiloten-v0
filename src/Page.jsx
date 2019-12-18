@@ -2,8 +2,6 @@ import React from 'react';
 import { Query } from 'react-contentful';
 
 import ReactMarkdown from 'react-markdown';
-
-import Container from 'react-bootstrap/Container'
  
 const Page = (props) => (
   <Query
