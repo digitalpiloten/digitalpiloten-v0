@@ -2,7 +2,7 @@ import React from 'react';
 import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import Page from './Page';  // @see Page component defined in `Query` example below
 
-import { Container } from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container'
 
 import {
   BrowserRouter as Router,
