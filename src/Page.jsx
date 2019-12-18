@@ -3,7 +3,7 @@ import { Query } from 'react-contentful';
  
 const Page = (props) => (
   <Query
-    contentType="Page"
+    contentType="page"
     query={{
       'fields.slug[in]': `/${props.match.slug || ''}`,
     }}
