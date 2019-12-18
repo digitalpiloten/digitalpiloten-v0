@@ -90,3 +90,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/react,macos,mac,windows,linux
+
+build/**/*
+build/*
+build/
