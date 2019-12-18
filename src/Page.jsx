@@ -5,7 +5,7 @@ const Page = (props) => (
   <Query
     contentType="page"
     query={{
-      'fields.slug[in]': `/${props.match.slug || ''}`,
+      'fields.slug[in]': `/${props.match.params.slug || ''}`,
     }}
   >
     {({data, error, fetched, loading}) => {
