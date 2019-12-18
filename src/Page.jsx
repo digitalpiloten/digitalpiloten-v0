@@ -43,6 +43,7 @@ class Page extends React.Component {
           //console.debug(data);
     
           // Process and pass in the loaded `data` necessary for your page or child components
+          document.title = data.items[0].fields.title + " | DigitalPiloten e. V."
           return (
             <div>
               <ReactMarkdown source={data.items[0].fields.content} />
