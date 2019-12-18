@@ -39,11 +39,9 @@ const Page = (props) => (
  
       // Process and pass in the loaded `data` necessary for your page or child components
       return (
-        <Container>
-          <div className="content">
-            <ReactMarkdown source={data.items[0].fields.content} />
-          </div>
-        </Container>
+        <div>
+          <ReactMarkdown source={data.items[0].fields.content} />
+        </div>
       );
     }}
   </Query>
