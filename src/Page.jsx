@@ -2,6 +2,8 @@ import React from 'react';
 import { Query } from 'react-contentful';
 
 import ReactMarkdown from 'react-markdown';
+
+import { Container } from 'react-bootstrap/Container'
  
 const Page = (props) => (
   <Query
@@ -37,11 +39,11 @@ const Page = (props) => (
  
       // Process and pass in the loaded `data` necessary for your page or child components
       return (
-        <div className="container">
+        <Container>
           <div className="content">
             <ReactMarkdown source={data.items[0].fields.content} />
           </div>
-        </div>
+        </Container>
       );
     }}
   </Query>

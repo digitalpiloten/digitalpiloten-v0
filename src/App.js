@@ -2,6 +2,8 @@ import React from 'react';
 import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import Page from './Page';  // @see Page component defined in `Query` example below
 
+import { Container } from 'react-bootstrap/Container'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,13 +16,15 @@ const contentfulClient = new ContentfulClient({
 });
  
 const App = () => (
-  <ContentfulProvider client={contentfulClient}>
-    <Router>
-      <Switch>
-        <Route path="/:slug*" component={Page} />
-      </Switch>
-    </Router>
-  </ContentfulProvider>
+  <Container>
+    <ContentfulProvider client={contentfulClient}>
+      <Router>
+        <Switch>
+          <Route path="/:slug*" component={Page} />
+        </Switch>
+      </Router>
+    </ContentfulProvider>
+  </Container>
 );
  
 export default App;
