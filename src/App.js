@@ -18,18 +18,16 @@ const contentfulClient = new ContentfulClient({
 });
  
 const App = () => (
-  <div>
-    <Navigation />
-    <Container>
-      <ContentfulProvider client={contentfulClient}>
-        <Router>
-          <Switch>
-            <Route path="/:slug*" component={Page} />
-          </Switch>
-        </Router>
-      </ContentfulProvider>
-    </Container>
-  </div>
+  <ContentfulProvider client={contentfulClient}>
+    <Router>
+      <Navigation />
+      <Container>
+        <Switch>
+          <Route path="/:slug*" component={Page} />
+        </Switch>
+      </Container>
+    </Router>
+  </ContentfulProvider>
 );
  
 export default App;
