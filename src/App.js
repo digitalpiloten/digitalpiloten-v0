@@ -4,6 +4,8 @@ import Page from './Page';  // @see Page component defined in `Query` example be
 
 import Container from 'react-bootstrap/Container'
 
+import Navigation from './Navigation'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,15 +18,18 @@ const contentfulClient = new ContentfulClient({
 });
  
 const App = () => (
-  <Container>
-    <ContentfulProvider client={contentfulClient}>
-      <Router>
-        <Switch>
-          <Route path="/:slug*" component={Page} />
-        </Switch>
-      </Router>
-    </ContentfulProvider>
-  </Container>
+  <div>
+    <Navigation />
+    <Container>
+      <ContentfulProvider client={contentfulClient}>
+        <Router>
+          <Switch>
+            <Route path="/:slug*" component={Page} />
+          </Switch>
+        </Router>
+      </ContentfulProvider>
+    </Container>
+  </div>
 );
  
 export default App;
