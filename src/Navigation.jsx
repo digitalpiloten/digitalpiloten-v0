@@ -7,6 +7,8 @@ import {
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Navbar } from 'react-bulma-components';
 
+import { LinkContainer } from 'react-router-bootstrap'
+
 import logo from './digitalpiloten.jpg';
 
 class Navigation extends React.Component {
@@ -14,9 +16,11 @@ class Navigation extends React.Component {
         return (
             <Navbar role="navigation" aria-label="main navigation">
                 <Navbar.Brand>
-                    <Navbar.Item href="/">
-                        <img src={logo} width="50" height="50" alt="Logo der DigitalPiloten e. V." />
-                    </Navbar.Item>
+                    <LinkContainer to="/">
+                        <Navbar.Item>
+                            <img src={logo} width="50" height="50" alt="Logo der DigitalPiloten e. V." />
+                        </Navbar.Item>
+                    </LinkContainer>
                 </Navbar.Brand>
             </Navbar>
         )
