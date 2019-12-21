@@ -7,6 +7,8 @@ import {
   Redirect
 }  from "react-router-dom"
  
+import { Hero, Container } from 'react-bulma-components'
+
 class Page extends React.Component {
 
   render() {
@@ -46,6 +48,13 @@ class Page extends React.Component {
           document.title = data.items[0].fields.title + " | DigitalPiloten e. V."
           return (
             <div>
+              <Hero color="primary">
+                <Hero.Body>
+                  <Container>
+                    {data.items[0].fields.title}
+                  </Container>
+                </Hero.Body>
+              </Hero>
               <ReactMarkdown source={data.items[0].fields.content} />
             </div>
           );
