@@ -21,7 +21,21 @@ class Navigation extends React.Component {
                             <img src={logo} width="50" height="50" alt="Logo der DigitalPiloten e. V." />
                         </Navbar.Item>
                     </LinkContainer>
+                    <Navbar.Burger aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </Navbar.Burger>
                 </Navbar.Brand>
+                <Navbar.Menu id="navbarBasicExample">
+                    <Navbar.Start>
+                        <LinkContainer to="/about">
+                            <Navbar.Item>
+                                Über uns
+                            </Navbar.Item>
+                        </LinkContainer>
+                    </Navbar.Start>
+                </Navbar.Menu>
             </Navbar>
         )
     }
