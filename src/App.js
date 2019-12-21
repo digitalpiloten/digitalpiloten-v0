@@ -6,7 +6,6 @@ import Navigation from './Navigation'
 import Footer from './Footer'
 
 import 'react-bulma-components/dist/react-bulma-components.min.css';
-import { Container } from 'react-bulma-components';
 
 import {
   BrowserRouter as Router,

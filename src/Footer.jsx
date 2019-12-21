@@ -12,9 +12,7 @@ class Navigation extends React.Component {
                 <Content>
                     <center>
                         <p>
-                            <b>
-                                Copyright &copy; 2019 DigitalPiloten e. V. Alle Rechte vorbehalten.
-                            </b>
+                            Copyright &copy; 2019 DigitalPiloten e. V. Alle Rechte vorbehalten.
                         </p>
                     </center>
                 </Content>
