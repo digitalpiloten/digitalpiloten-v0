@@ -7,7 +7,7 @@ import {
   Redirect
 }  from "react-router-dom"
  
-import { Hero, Container } from 'react-bulma-components'
+import { Hero, Container, Content } from 'react-bulma-components'
 
 class Page extends React.Component {
 
@@ -59,7 +59,9 @@ class Page extends React.Component {
               </Hero>
               <div style={{minHeight: "500px", paddingTop: "20px"}}>
                 <Container>
-                  <ReactMarkdown source={data.items[0].fields.content} escapeHtml={false} />
+                  <Content>
+                    <ReactMarkdown source={data.items[0].fields.content} escapeHtml={false} />
+                  </Content>
                 </Container>
               </div>
             </div>
