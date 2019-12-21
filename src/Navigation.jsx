@@ -12,11 +12,11 @@ class Navigation extends React.Component {
         return (
             <Navbar role="navigation" aria-label="main navigation">
                 <Navbar.Brand>
-                    <LinkContainer to="/">
+                    <Link to="/">
                         <Navbar.Item>
                             <img src={logo} width="50" height="50" alt="Logo der DigitalPiloten e. V." />
                         </Navbar.Item>
-                    </LinkContainer>
+                    </Link>
                     <Navbar.Burger aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
