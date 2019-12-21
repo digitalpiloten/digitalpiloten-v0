@@ -6,6 +6,8 @@ import Container from 'react-bootstrap/Container'
 
 import Navigation from './Navigation'
 
+import './css/tailwind.css';
+
 import {
   BrowserRouter as Router,
   Switch,
