@@ -22,11 +22,9 @@ const App = () => (
   <ContentfulProvider client={contentfulClient}>
     <Router>
       <Navigation />
-      <Container>
-        <Switch>
-          <Route path="/:slug*" component={Page} />
-        </Switch>
-      </Container>
+      <Switch>
+        <Route path="/:slug*" component={Page} />
+      </Switch>
     </Router>
   </ContentfulProvider>
 );

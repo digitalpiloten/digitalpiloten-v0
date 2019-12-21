@@ -51,11 +51,15 @@ class Page extends React.Component {
               <Hero color="primary">
                 <Hero.Body>
                   <Container>
-                    {data.items[0].fields.title}
+                    <h1 className="title is-1">
+                      {data.items[0].fields.title}
+                    </h1>
                   </Container>
                 </Hero.Body>
               </Hero>
-              <ReactMarkdown source={data.items[0].fields.content} />
+              <Container>
+                <ReactMarkdown source={data.items[0].fields.content} />
+              </Container>
             </div>
           );
         }}
