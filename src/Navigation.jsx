@@ -3,7 +3,7 @@ import React from 'react';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Navbar } from 'react-bulma-components';
 
-import { LinkContainer } from 'react-router-bootstrap'
+import { Link } from "react-router-dom";
 
 import logo from './digitalpiloten.jpg';
 
@@ -25,11 +25,16 @@ class Navigation extends React.Component {
                 </Navbar.Brand>
                 <Navbar.Menu id="navbarBasicExample">
                     <div className="navbar-start">
-                        <LinkContainer to="/about">
+                        <Link to="/about">
                             <Navbar.Item>
                                 Über uns
                             </Navbar.Item>
-                        </LinkContainer>
+                        </Link>
+                        <Link to="/kurse">
+                            <Navbar.Item>
+                                Kurse
+                            </Navbar.Item>
+                        </Link>
                     </div>
                 </Navbar.Menu>
             </Navbar>
