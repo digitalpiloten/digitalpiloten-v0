@@ -57,7 +57,7 @@ class Page extends React.Component {
                   </Container>
                 </Hero.Body>
               </Hero>
-              <div style={{minWidth: "700px"}}>
+              <div style={{minHeight: "700px"}}>
                 <Container>
                   <ReactMarkdown source={data.items[0].fields.content} />
                 </Container>
