@@ -2,9 +2,10 @@ import React from 'react';
 import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import Page from './Page';  // @see Page component defined in `Query` example below
 
-import Container from 'react-bootstrap/Container'
-
 import Navigation from './Navigation'
+
+import 'react-bulma-components/dist/react-bulma-components.min.css';
+import { Container } from 'react-bulma-components';
 
 import './css/tailwind.css';
 
