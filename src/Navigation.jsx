@@ -8,6 +8,14 @@ import { LinkContainer } from "react-router-bootstrap";
 import logo from './digitalpiloten.jpg';
 
 class Navigation extends React.Component {
+
+    state = { navbarActive : false }
+
+    handleBurgerClick = () => { 
+        const { navbarActive } = this.state;
+        this.setState({ navbarActive: !navbarActive }); 
+    }
+
     render() {
         return (
             <Navbar role="navigation" aria-label="main navigation">
@@ -17,7 +25,13 @@ class Navigation extends React.Component {
                             <img src={logo} width="50" height="50" alt="Logo der DigitalPiloten e. V." />
                         </Navbar.Item>
                     </LinkContainer>
-                    <Navbar.Burger aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <Navbar.Burger
+                        aria-label="menu"
+                        aria-expanded="false"
+                        data-target="navbarBasicExample"
+                        active={this.state.navbarActive}
+                        onClick={this.handleBurgerClick}
+                    >
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
