@@ -28,13 +28,13 @@ class Navigation extends React.Component {
                     </Navbar.Burger>
                 </Navbar.Brand>
                 <Navbar.Menu id="navbarBasicExample">
-                    <Navbar.Start>
+                    <div className="navbar-start">
                         <LinkContainer to="/about">
                             <Navbar.Item>
                                 Über uns
                             </Navbar.Item>
                         </LinkContainer>
-                    </Navbar.Start>
+                    </div>
                 </Navbar.Menu>
             </Navbar>
         )
