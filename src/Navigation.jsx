@@ -25,6 +25,11 @@ class Navigation extends React.Component {
                 </Navbar.Brand>
                 <Navbar.Menu id="navbarBasicExample">
                     <div className="navbar-start">
+                        <Link to="/">
+                            <Navbar.Item>
+                                Home
+                            </Navbar.Item>
+                        </Link>
                         <Link to="/about">
                             <Navbar.Item>
                                 Über uns
