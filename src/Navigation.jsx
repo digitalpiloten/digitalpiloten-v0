@@ -9,11 +9,11 @@ import logo from './digitalpiloten.jpg';
 
 class Navigation extends React.Component {
 
-    state = { navbarActive : false }
+    state = { active : false }
 
-    handleBurgerClick = () => { 
-        const { navbarActive } = this.state;
-        this.setState({ navbarActive: !navbarActive }); 
+    handleClick = () => { 
+        const { active } = this.state;
+        this.setState({ active: !active }); 
     }
 
     render() {
@@ -29,8 +29,8 @@ class Navigation extends React.Component {
                         aria-label="menu"
                         aria-expanded="false"
                         data-target="navbarBasicExample"
-                        active={this.state.navbarActive}
-                        onClick={this.handleBurgerClick}
+                        active={this.state.active}
+                        onClick={this.handleClick}
                     >
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
