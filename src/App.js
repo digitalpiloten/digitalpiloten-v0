@@ -7,8 +7,6 @@ import Navigation from './Navigation'
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Container } from 'react-bulma-components';
 
-import './css/tailwind.css';
-
 import {
   BrowserRouter as Router,
   Switch,
