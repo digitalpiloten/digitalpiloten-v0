@@ -1,6 +1,5 @@
 import React from 'react';
 
-import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Footer, Content } from 'react-bulma-components';
 
 //import { LinkContainer } from 'react-router-bootstrap'

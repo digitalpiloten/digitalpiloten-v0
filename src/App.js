@@ -5,8 +5,6 @@ import Page from './Page';  // @see Page component defined in `Query` example be
 import Navigation from './Navigation'
 import Footer from './Footer'
 
-import 'react-bulma-components/dist/react-bulma-components.min.css';
-
 import {
   BrowserRouter as Router,
   Switch,
