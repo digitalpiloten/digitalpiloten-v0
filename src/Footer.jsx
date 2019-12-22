@@ -14,9 +14,7 @@ class Navigation extends React.Component {
                     <center>
                         <p>
                             Copyright &copy; 2019 DigitalPiloten e. V. Alle Rechte vorbehalten.
-                        </p>
-                        <br />
-                        <p>
+                            <br />
                             <Link to="/impressum">
                                 Impressum
                             </Link>
